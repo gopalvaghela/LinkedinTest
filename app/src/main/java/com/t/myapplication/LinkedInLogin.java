@@ -43,7 +43,7 @@ public class LinkedInLogin extends AppCompatActivity {
     private String linkedid;
     /****FILL THIS WITH YOUR INFORMATION*********/
     //successfull auth url
-    // private static final String AUTHORIZATION_URL="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=815v14d0fga13f&redirect_uri=https://www.latitudetechnolabs.com/auth/linkedin/callback&scope=r_emailaddress%20r_liteprofile%20w_member_social";
+
 //This is the public api key of our application
     private static final String API_KEY = "client_id";
     //This is the private api key of our application
@@ -56,11 +56,11 @@ public class LinkedInLogin extends AppCompatActivity {
     /*********************************************/
 
 //These are constants used for build the urls
-    //  private static final String AUTHORIZATION_URL = "https://www.linkedin.com/uas/oauth2/authorization?scope=r_liteprofile";
-    private static final String AUTHORIZATION_URL = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=qweqweds&redirect_uri=https://www.latitudetechnolabs.com/auth/linkedin/callback&scope=r_emailaddress%20r_liteprofile%20w_member_social";
-    //  private static final String AUTHORIZATION_URL="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=815v14d0fga13f&redirect_uri=https://www.latitudetechnolabs.com/auth/linkedin/callback&state=asldj@$@#$sdjsldfjsd&scope=r_liteprofile%20r_emailaddress%20";
+    //Replace your client id in this url also
+    private static final String AUTHORIZATION_URL = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=yourclientid&redirect_uri=https://www.latitudetechnolabs.com/auth/linkedin/callback&scope=r_emailaddress%20r_liteprofile%20w_member_social";
+
     private static final String ACCESS_TOKEN_URL = "https://www.linkedin.com/uas/oauth2/accessToken";
-    // private static final String ACCESS_TOKEN_URL ="https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&code={authorization_code_from_step2_response}&redirect_uri=https://www.latitudetechnolabs.com/auth/linkedin/callback&client_id={815v14d0fga13f}&client_secret={zKRtJlXcjg4KDH5f}";
+
     private static final String SECRET_KEY_PARAM = "client_secret";
     private static final String RESPONSE_TYPE_PARAM = "response_type";
     private static final String GRANT_TYPE_PARAM = "grant_type";
